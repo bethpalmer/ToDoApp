@@ -26,7 +26,8 @@
 		<script type="text/template" id="item-template">
 			<div class="view">
 				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
-				<label><%- title %></label>
+				<label><%- title %><%= completed ? '-- DONE' : '' %></label>
+				<button class="edit-btn"></button>
 				<button class="destroy"></button>
 			</div>
 			<input class="edit" value="<%- title %>">
@@ -61,3 +62,5 @@
 		<script src="js/app.js"></script>
 	</body>
 </html>
+
+<!-- Add a button with .priority-btn  -->
