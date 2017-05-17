@@ -27,6 +27,7 @@
 			<div class="view">
 				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
 				<label><%- title %><%= completed ? '-- DONE' : '' %></label>
+				<button class="priority-btn"></button>
 				<button class="edit-btn"></button>
 				<button class="destroy"></button>
 			</div>
@@ -63,4 +64,10 @@
 	</body>
 </html>
 
-<!-- Add a button with .priority-btn  -->
+<!-- Potential additional functionality
+		*	Let the user set the priotity status when creating to do items
+		*	Let users filter or sort by priority status
+		*	Expand the priority feature to have more than 2 levels
+		*	Add a recycle bin for recovering deleted items
+		*	Add colours so people can associate differnt colours with different types of todos
+		*	Add labels for sorting and filtering  -->
